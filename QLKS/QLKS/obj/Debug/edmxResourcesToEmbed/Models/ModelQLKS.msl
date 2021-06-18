@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QLKSModelStoreContainer" CdmEntityContainer="QLKSEntities">
+    <EntitySetMapping Name="ChucVus">
+      <EntityTypeMapping TypeName="QLKSModel.ChucVu">
+        <MappingFragment StoreEntitySet="ChucVu">
+          <ScalarProperty Name="ma_chuc_vu" ColumnName="ma_chuc_vu" />
+          <ScalarProperty Name="chuc_vu" ColumnName="chuc_vu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HoaDons">
+      <EntityTypeMapping TypeName="QLKSModel.HoaDon">
+        <MappingFragment StoreEntitySet="HoaDon">
+          <ScalarProperty Name="ma_hd" ColumnName="ma_hd" />
+          <ScalarProperty Name="ma_nv" ColumnName="ma_nv" />
+          <ScalarProperty Name="ma_pdp" ColumnName="ma_pdp" />
+          <ScalarProperty Name="ngay_tra_phong" ColumnName="ngay_tra_phong" />
+          <ScalarProperty Name="ma_tinh_trang" ColumnName="ma_tinh_trang" />
+          <ScalarProperty Name="tien_phong" ColumnName="tien_phong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhachHangs">
+      <EntityTypeMapping TypeName="QLKSModel.KhachHang">
+        <MappingFragment StoreEntitySet="KhachHang">
+          <ScalarProperty Name="ma_kh" ColumnName="ma_kh" />
+          <ScalarProperty Name="mat_khau" ColumnName="mat_khau" />
+          <ScalarProperty Name="ho_ten" ColumnName="ho_ten" />
+          <ScalarProperty Name="cmt" ColumnName="cmt" />
+          <ScalarProperty Name="sdt" ColumnName="sdt" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoaiPhongs">
+      <EntityTypeMapping TypeName="QLKSModel.LoaiPhong">
+        <MappingFragment StoreEntitySet="LoaiPhong">
+          <ScalarProperty Name="loai_phong" ColumnName="loai_phong" />
+          <ScalarProperty Name="mo_ta" ColumnName="mo_ta" />
+          <ScalarProperty Name="gia" ColumnName="gia" />
+          <ScalarProperty Name="anh" ColumnName="anh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhanViens">
+      <EntityTypeMapping TypeName="QLKSModel.NhanVien">
+        <MappingFragment StoreEntitySet="NhanVien">
+          <ScalarProperty Name="ma_nv" ColumnName="ma_nv" />
+          <ScalarProperty Name="ho_ten" ColumnName="ho_ten" />
+          <ScalarProperty Name="ngay_sinh" ColumnName="ngay_sinh" />
+          <ScalarProperty Name="dia_chi" ColumnName="dia_chi" />
+          <ScalarProperty Name="sdt" ColumnName="sdt" />
+          <ScalarProperty Name="tai_khoan" ColumnName="tai_khoan" />
+          <ScalarProperty Name="mat_khau" ColumnName="mat_khau" />
+          <ScalarProperty Name="ma_chuc_vu" ColumnName="ma_chuc_vu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhieuDatPhongs">
+      <EntityTypeMapping TypeName="QLKSModel.PhieuDatPhong">
+        <MappingFragment StoreEntitySet="PhieuDatPhong">
+          <ScalarProperty Name="ma_pdp" ColumnName="ma_pdp" />
+          <ScalarProperty Name="ma_kh" ColumnName="ma_kh" />
+          <ScalarProperty Name="ngay_dat" ColumnName="ngay_dat" />
+          <ScalarProperty Name="ngay_vao" ColumnName="ngay_vao" />
+          <ScalarProperty Name="ngay_ra" ColumnName="ngay_ra" />
+          <ScalarProperty Name="ma_phong" ColumnName="ma_phong" />
+          <ScalarProperty Name="ma_tinh_trang" ColumnName="ma_tinh_trang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Phongs">
+      <EntityTypeMapping TypeName="QLKSModel.Phong">
+        <MappingFragment StoreEntitySet="Phong">
+          <ScalarProperty Name="ma_phong" ColumnName="ma_phong" />
+          <ScalarProperty Name="so_phong" ColumnName="so_phong" />
+          <ScalarProperty Name="loai_phong" ColumnName="loai_phong" />
+          <ScalarProperty Name="ma_tang" ColumnName="ma_tang" />
+          <ScalarProperty Name="ma_tinh_trang" ColumnName="ma_tinh_trang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tangs">
+      <EntityTypeMapping TypeName="QLKSModel.Tang">
+        <MappingFragment StoreEntitySet="Tang">
+          <ScalarProperty Name="ma_tang" ColumnName="ma_tang" />
+          <ScalarProperty Name="ten_tang" ColumnName="ten_tang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TinhTrangHoaDons">
+      <EntityTypeMapping TypeName="QLKSModel.TinhTrangHoaDon">
+        <MappingFragment StoreEntitySet="TinhTrangHoaDon">
+          <ScalarProperty Name="ma_tinh_trang" ColumnName="ma_tinh_trang" />
+          <ScalarProperty Name="mo_ta" ColumnName="mo_ta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TinhTrangPhieuDatPhongs">
+      <EntityTypeMapping TypeName="QLKSModel.TinhTrangPhieuDatPhong">
+        <MappingFragment StoreEntitySet="TinhTrangPhieuDatPhong">
+          <ScalarProperty Name="ma_tinh_trang" ColumnName="ma_tinh_trang" />
+          <ScalarProperty Name="tinh_trang" ColumnName="tinh_trang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TinhTrangPhongs">
+      <EntityTypeMapping TypeName="QLKSModel.TinhTrangPhong">
+        <MappingFragment StoreEntitySet="TinhTrangPhong">
+          <ScalarProperty Name="ma_tinh_trang" ColumnName="ma_tinh_trang" />
+          <ScalarProperty Name="mo_ta" ColumnName="mo_ta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TinNhans">
+      <EntityTypeMapping TypeName="QLKSModel.TinNhan">
+        <MappingFragment StoreEntitySet="TinNhan">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ngay_gui" ColumnName="ngay_gui" />
+          <ScalarProperty Name="ma_kh" ColumnName="ma_kh" />
+          <ScalarProperty Name="ho_ten" ColumnName="ho_ten" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="noi_dung" ColumnName="noi_dung" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,102 @@
+﻿
+@{
+    Layout = null;
+}
+@model QLKS.Models.NhanVien
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Login Admin</title>
+    <link href="~/Content/Admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/Admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/Admin/css/sb-admin.css" rel="stylesheet">
+</head>
+<style>
+    .dangnhap input {
+        color: #fff;
+        width: 50%;
+        margin: auto;
+        padding: 0.5em 0;
+        margin-top: 0em;
+        font-size: 1em;
+        letter-spacing: 2px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 30px;
+        font-weight: 600;
+        background: #656518;
+       
+        color: #fff;
+        border: 1px solid transparent;
+        font-family: 'Source Sans Pro', sans-serif;
+        transition: 0.5s all ease;
+        -webkit-transition: 0.5s all ease;
+        -moz-transition: 0.5s all ease;
+        -o-transition: 0.5s all ease;
+        -ms-transition: 0.5s all ease;
+    }
+        .dangnhap input:hover {
+            border: 1px solid #fd5c63;
+            color: #fd5c6;
+            background: transparent;
+        }
+    .form-group {
+       
+    }
+    .container
+    {
+        
+    }
+    .card-header
+    {
+        font-weight:bold;
+    }
+</style>
+
+<body style="background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#7abeef), color-stop(17%,#86c3ef), color-stop(46%,#f7d576), color-stop(46%,#f7d576), color-stop(56%,#f9d05e), color-stop(92%,#69b5ef), color-stop(100%,#71b9ed)); " class="">
+    <div class="container">
+        <div class="card-header">xin chào quản trị viên</div>
+        <i class="fa fa-users"></i>
+
+        <div class="card card-login  mt-5">
+
+            <div style="  background: #0c3f65" ; class="card-body">
+                @using (Html.BeginForm("Login", "Index", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true)
+                    <div style="border-radius:20px" class="form-group">
+                        <label style="color:white" for="exampleInputEmail1">Tài khoản</label>
+                        @Html.TextBoxFor(u => u.tai_khoan, null, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(u => u.tai_khoan)
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Mật khẩu</label>
+                        @Html.PasswordFor(u => u.mat_khau, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(u => u.mat_khau)
+                    </div>
+                    <div class="dangnhap">
+
+                        <input type="submit" value="Đăng nhập" />
+                    </div>
+
+                }
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="~/Content/Admin/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Content/Admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/Admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+</body>
+
+</html>
